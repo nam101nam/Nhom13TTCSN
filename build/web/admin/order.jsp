@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" session="true" %>
+
     <!DOCTYPE html>
     <html lang="en">
 
@@ -18,7 +19,7 @@
 
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.jsp">Laptop Shop</a>
+            <a class="navbar-brand ps-3" href="index.html">Laptop Shop</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                     class="fas fa-bars"></i></button>
@@ -75,28 +76,27 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Manage user</h1>
+                        <h1 class="mt-4">Manage order</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="../admin/index.jsp">Dashboard</a></li>
-                            <li class="breadcrumb-item active">User</li>
+                            <li class="breadcrumb-item active">Order</li>
                         </ol>
-                        <div>
-                            <div class="d-flex justify-content-between">
-                                <h2>User table</h2>
-                                <button class="btn btn-success">Tạo mới</button>
-                            </div>
 
+                        <div>
+                            <h2>Order table</h2>
                             <div class="table-responsive small">
                                 <table class="table table-striped table-sm">
                                     <thead>
                                         <tr>
-                                            <th scope="col">User id</th>
-                                            <th scope="col">Tên đăng nhập</th>
-                                            <th scope="col">Mật khẩu</th>
-                                            <th scope="col">Họ và tên</th>
-                                            <th scope="col">Email</th>
+                                            <th scope="col">Order id
+
+                                            </th>
+                                            <th scope="col">Ngày đặt</th>
+                                            <th scope="col">Địa chỉ</th>
                                             <th scope="col">Số điện thoại</th>
-                                            <th scope="col">Chức vụ</th>
+                                            <th scope="col">Id người đặt</th>
+                                            <th scope="col">Tổng tiền</th>
+                                            <th scope="col">Trạng thái</th>
                                             <th scope="col">Hành động</th>
                                             <!-- <th>
                                             <button class="btn btn-primary">Xem chi tiet</button>
@@ -105,82 +105,65 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>U001</td>
-                                            <td>admin01</td>
-                                            <td>admin123</td>
-                                            <td>Nguyễn Văn Admin</td>
-                                            <td>admin01@example.com</td>
+                                            <td>1001</td>
+                                            <td>2025-01-12</td>
+                                            <td>123 Nguyễn Trãi, Hà Nội</td>
                                             <td>0935123456</td>
-                                            <td>Admin</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
+                                            <td>U001</td>
+                                            <td>1,250,000 đ</td>
+                                            <td>Đang xử lý</td>
+                                            <td><button class="btn btn-primary btn-sm">Xem</button>
+                                                <button class="btn btn-danger">Xóa</button>
                                             </td>
+
+
                                         </tr>
 
                                         <tr>
-                                            <td>U002</td>
-                                            <td>user_anh</td>
-                                            <td>user2025</td>
-                                            <td>Trần Minh Anh</td>
-                                            <td>minhanh@example.com</td>
+                                            <td>1002</td>
+                                            <td>2025-01-14</td>
+                                            <td>45 Lý Thường Kiệt, HCM</td>
                                             <td>0907234567</td>
-                                            <td>User</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
+                                            <td>U023</td>
+                                            <td>890,000 đ</td>
+                                            <td>Đã giao</td>
+                                            <td><button class="btn btn-primary btn-sm">Xem</button>
+                                                <button class="btn btn-danger">Xóa</button>
                                             </td>
                                         </tr>
 
                                         <tr>
-                                            <td>U003</td>
-                                            <td>phamquang</td>
-                                            <td>quangpass</td>
-                                            <td>Phạm Quốc Quang</td>
-                                            <td>quangpq@example.com</td>
+                                            <td>1003</td>
+                                            <td>2025-01-18</td>
+                                            <td>67 Hai Bà Trưng, Đà Nẵng</td>
                                             <td>0978654321</td>
-                                            <td>User</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>U004</td>
-                                            <td>admin02</td>
-                                            <td>root2025</td>
-                                            <td>Lê Thị Quản Trị</td>
-                                            <td>admin02@example.com</td>
-                                            <td>0982345567</td>
-                                            <td>Admin</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>U005</td>
-                                            <td>ngoc_user</td>
-                                            <td>ngoc1234</td>
-                                            <td>Đỗ Ngọc Lan</td>
-                                            <td>ngoclan@example.com</td>
-                                            <td>0912346789</td>
-                                            <td>User</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
+                                            <td>U011</td>
+                                            <td>2,450,000 đ</td>
+                                            <td>Đã hủy</td>
+                                            <td><button class="btn btn-primary btn-sm">Xem</button>
+                                                <button class="btn btn-danger">Xóa</button>
                                             </td>
                                         </tr>
                                     </tbody>
-
 
                                 </table>
                             </div>
                         </div>
                     </div>
-                    </footer>
+                </main>
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

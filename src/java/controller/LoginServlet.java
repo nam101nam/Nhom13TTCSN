@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
          // If user is admin (roleId == 1) redirect to admin dashboard
          int role = loggedInUser.getRoleId();
          if (role == 1) {
-            response.sendRedirect("admin/dashboard.html");
+            response.sendRedirect("admin/index.jsp");
          } else {
             response.sendRedirect("index.jsp");
          }

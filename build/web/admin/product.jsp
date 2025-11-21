@@ -75,28 +75,26 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Manage user</h1>
+                        <h1 class="mt-4">Manage product</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="../admin/index.jsp">Dashboard</a></li>
-                            <li class="breadcrumb-item active">User</li>
+                            <li class="breadcrumb-item active">Product</li>
                         </ol>
                         <div>
                             <div class="d-flex justify-content-between">
-                                <h2>User table</h2>
+                                <h2>Product table</h2>
                                 <button class="btn btn-success">Tạo mới</button>
                             </div>
-
                             <div class="table-responsive small">
                                 <table class="table table-striped table-sm">
                                     <thead>
                                         <tr>
-                                            <th scope="col">User id</th>
-                                            <th scope="col">Tên đăng nhập</th>
-                                            <th scope="col">Mật khẩu</th>
-                                            <th scope="col">Họ và tên</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Số điện thoại</th>
-                                            <th scope="col">Chức vụ</th>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Tên</th>
+                                            <th scope="col">Giá</th>
+                                            <th scope="col">Ảnh</th>
+                                            <th scope="col">Thông tin</th>
+                                            <th scope="col">Số lượng</th>
                                             <th scope="col">Hành động</th>
                                             <!-- <th>
                                             <button class="btn btn-primary">Xem chi tiet</button>
@@ -105,70 +103,51 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>U001</td>
-                                            <td>admin01</td>
-                                            <td>admin123</td>
-                                            <td>Nguyễn Văn Admin</td>
-                                            <td>admin01@example.com</td>
-                                            <td>0935123456</td>
-                                            <td>Admin</td>
+                                            <td>1001</td>
+                                            <td>MacBook Pro 16 M1</td>
+                                            <td>52,990,000 đ</td>
                                             <td>
+                                                <img src="../assets/acer_sadow_desc_img.png" alt="MacBook Pro 16"
+                                                    width="70" class="img-thumbnail">
+                                            </td>
+                                            <td>Chip Apple M1 Pro, màn 16 inch Retina, pin 21 giờ.</td>
+                                            <td>5</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm">Chi tiết</button>
                                                 <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
                                                 <button class="btn btn-danger btn-sm">Xóa</button>
                                             </td>
                                         </tr>
 
                                         <tr>
-                                            <td>U002</td>
-                                            <td>user_anh</td>
-                                            <td>user2025</td>
-                                            <td>Trần Minh Anh</td>
-                                            <td>minhanh@example.com</td>
-                                            <td>0907234567</td>
-                                            <td>User</td>
+                                            <td>1002</td>
+                                            <td>Asus ROG Strix G16</td>
+                                            <td>39,490,000 đ</td>
                                             <td>
+                                                <img src="../assets/acer_sadow_desc_img.png" alt="Asus ROG G16"
+                                                    width="70" class="img-thumbnail">
+                                            </td>
+                                            <td>Intel i7-13650HX, RTX 4060, RAM 16GB, màn 165Hz.</td>
+                                            <td>12</td>
+                                            <td>
+                                                <button class="btn btn-primary btn-sm">Chi tiết</button>
                                                 <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
                                                 <button class="btn btn-danger btn-sm">Xóa</button>
                                             </td>
                                         </tr>
 
                                         <tr>
-                                            <td>U003</td>
-                                            <td>phamquang</td>
-                                            <td>quangpass</td>
-                                            <td>Phạm Quốc Quang</td>
-                                            <td>quangpq@example.com</td>
-                                            <td>0978654321</td>
-                                            <td>User</td>
+                                            <td>1003</td>
+                                            <td>Dell XPS 13 Plus</td>
+                                            <td>45,990,000 đ</td>
                                             <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
+                                                <img src="../assets/acer_sadow_desc_img.png" alt="Dell XPS 13 Plus"
+                                                    width="70" class="img-thumbnail">
                                             </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>U004</td>
-                                            <td>admin02</td>
-                                            <td>root2025</td>
-                                            <td>Lê Thị Quản Trị</td>
-                                            <td>admin02@example.com</td>
-                                            <td>0982345567</td>
-                                            <td>Admin</td>
+                                            <td>Intel i7 Gen 13, viền màn siêu mỏng, SSD 1TB NVMe.</td>
+                                            <td>7</td>
                                             <td>
-                                                <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
-                                                <button class="btn btn-danger btn-sm">Xóa</button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>U005</td>
-                                            <td>ngoc_user</td>
-                                            <td>ngoc1234</td>
-                                            <td>Đỗ Ngọc Lan</td>
-                                            <td>ngoclan@example.com</td>
-                                            <td>0912346789</td>
-                                            <td>User</td>
-                                            <td>
+                                                <button class="btn btn-primary btn-sm">Chi tiết</button>
                                                 <button class="btn btn-warning btn-sm">Chỉnh sửa</button>
                                                 <button class="btn btn-danger btn-sm">Xóa</button>
                                             </td>
@@ -176,11 +155,25 @@
                                     </tbody>
 
 
+
                                 </table>
                             </div>
                         </div>
                     </div>
-                    </footer>
+                </main>
+
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
