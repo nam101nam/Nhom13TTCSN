@@ -97,10 +97,23 @@
                                 
                                 <div class="mb-3">
                                     <label for="roleId" class="form-label">Role</label>
-                                    <select class="form-select" id="roleId" name="roleId">
-                                        <option value="1" ${user.roleId == 1 ? 'selected' : ''}>Admin</option>
-                                        <option value="2" ${user.roleId == 2 ? 'selected' : ''}>User</option>
-                                    </select>
+                                    <c:choose>
+                                        <c:when test="${user != null && user.roleId == 1}">
+                                            <select class="form-select" id="roleId" name="roleId" disabled>
+                                                <option value="1" selected>Admin</option>
+                                            </select>
+                                            <%-- Disabled fields are not submitted, so we need a hidden field --%>
+                                            <input type="hidden" name="roleId" value="1" />
+                                            <div class="form-text">An Admin's role cannot be changed to User.</div>
+                                        </c:when>
+                                        <%-- Case 2 & 3: User is a regular user or it's a new user form --%>
+                                        <c:otherwise>
+                                            <select class="form-select" id="roleId" name="roleId">
+                                                <option value="1" ${user.roleId == 1 ? 'selected' : ''}>Admin</option>
+                                                <option value="2" ${user.roleId == 2 || user == null ? 'selected' : ''}>User</option>
+                                            </select>
+                                        </c:otherwise>
+                                    </c:choose>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">
